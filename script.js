@@ -1,5 +1,15 @@
-function getInput() {
-    // Get the value of the input field with id="name"
-    let name = document.getElementById("name").value;
-    console.log(name);
+
+(function () {
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+for (var i = 0; i < names.length; i++) {
+
+  var firstLetter = names[i].charAt(0).toLowerCase();
+  if (firstLetter === 'j') {
+    byeSpeaker.speak(names[i]);
+  } else {
+    helloSpeaker.speak(names[i]);
+  }
 }
+
+})();
