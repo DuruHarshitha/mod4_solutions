@@ -46,21 +46,8 @@ for (var i = 0; i < names.length; i++) {
             } else {
                 greeting = helloSpeaker.speak(names[i]);
             }
+  
             document.getElementById("greeting").textContent = greeting;
 }
 
 })();
-
- function processName() {
-            var name = document.getElementById("name").value.trim();
-
-
-            var greeting;
-            if (name.charAt(0).toLowerCase() === 'j') {
-                greeting = byeSpeaker.speak(name);
-            } else {
-                greeting = helloSpeaker.speak(name);
-            }
-
-            document.getElementById("greeting").textContent = greeting;
-        }
